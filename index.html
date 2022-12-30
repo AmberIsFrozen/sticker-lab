@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker Lab</title>
+</head>
+<style>
+    body {
+        font-family: 'Segoe UI', 'Noto Sans', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #CCC;
+        color: #000;
+    }
+
+    .header,
+    .footer {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .imgs {
+        border: 1px solid #aaa;
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .sticker {
+        padding: 10px;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    #src {
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <h1>Sticker Lab</h1>
+        <a href="https://lx862.com">Return to Home Page</a>
+        <hr>
+        <p>This page contains a list of images that I've drawn, usually replicating stickers seen in public places.</p>
+        <p>To save the image: <b>Right Click -> Save Image As...</b></p>
+        <p>All works below is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1">CC BY 4.0</a></p>
+        <input type="text" id="search" placeholder="Search keyword/reference ID">
+    </div>
+
+    <div id="src" class="imgs">
+        <img class="sticker"
+            keyword="MTR,9 car"
+            alt="MTR 9-car sticker"
+            src="./img/9-car.png"
+        >
+
+        <img class="sticker"
+            keyword="MTR,ael,airport express,phone,charge,TSS/LAB/INF/123(R2),102017"
+            alt="MTR Airport-Express phone charging sticker"
+            src="./img/ael_charge.png"
+        >
+
+        <img class="sticker"
+            keyword="MTR,ael,airport express,TSS/LAB/IDT/034"
+            alt="MTR Airport-Express logo"
+            src="./img/ael_logo.png">
+
+        <img class="sticker"
+            keyword="MTR,ticket machine,afc,octopus,SSS/AFC/061,112020"
+            alt="MTR ticket machine - 'Press button to take back Octopus card'"
+            src="./img/afc_card.png"
+        >
+
+        <img class="sticker"
+            keyword="MTR,apg,climb,SSS/NOT/PN17087,062017"
+            alt="MTR Automatic Platform Gates (Do not climb) sticker"
+            src="./img/apg_clb.png"
+        >
+
+        <img class="sticker"
+            keyword="MTR,ticket machine,banknote,SSS/LAB/INF/091"
+            alt="MTR ticket machine - Insert banknote one at a time"
+            src="./img/banknote_one_at_a_time.png"
+        >
+        <img class="sticker"
+            keyword="MTR,cctv,TSS/LAB/INF/048(R3)"
+            alt="MTR CCTV recording sticker (1)"
+            src="./img/cctv1.png"
+        >
+        <img class="sticker"
+            keyword="MTR,cctv,SSS/LAB/SAW/028(R1)"
+            alt="MTR CCTV recording sticker (2)"
+            src="./img/cctv2.png"
+        >
+
+        <img class="sticker"
+            keyword="MTR,train,door,label,TSS/LAB/IDT/050,D040,D2"
+            alt="MTR train door label (Car D040, Door D2)"
+            src="./img/d040_d2.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,emergency,DSS/OPS/GRO/039"
+            alt="MTR 'Emergency access keep clear'"
+            src="./img/emg_access.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,TSS/LAB/SAW/312(R1)"
+            alt="MTR Emergency call button sticker"
+            src="./img/emg_speak.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,escalator,SSS/LAB/SAW/245.1,122019"
+            alt="MTR Escalator: Hold the handrail sticker"
+            src="./img/esca_holdthehandrail.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,exit,icon,logo"
+            alt="MTR exit logo"
+            src="./img/exit.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,mlr,first class"
+            alt="MTR Mid-Life Refurbishment Train: First class window sticker"
+            src="./img/fc1_mlr.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,hear,SSS/LAB/IDT/045(R1),022015"
+            alt="MTR sticker: ear symbol"
+            src="./img/hear.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,speak,SSS/LAB/IDT/044(R1),022015"
+            alt="MTR sticker: speak symbol"
+            src="./img/speak.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,helpline"
+            alt="MTR Helpline icon"
+            src="./img/helpline.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,assist,staff,2920 2050,SSS/LAB/INF/055 (KWF)"
+            alt="MTR sticker: Station staff can be contacted on 2920 2050"
+            src="./img/help_phoneno_kwf.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,penalty,improper,use,SSS/LAB/SAW/036"
+            alt="MTR sticker: Penalty for improper use $5,000"
+            src="./img/improper_use.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,lrt,trespass,DSS/OPS/WAR/031"
+            alt="MTR Light Rail Trespass Signage"
+            src="./img/lrt_trespass1.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,platform,boarding,SSS/NOT/GN/248,102015"
+            alt="MTR poster: Move along the platform for easier boarding"
+            src="./img/move_along_platform.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,helpline,emergency stop,SSS/LAB/SAW/105"
+            alt="MTR Emergency Stop and Helpline sticker overlay"
+            src="./img/mtr_emg_stop.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,music,130cm,2881 8888,SSS/LAB/SAW/170(R2)"
+            alt="MTR sticker: Don't bring in any item longer than 130cm"
+            src="./img/musical.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,not in use,SSS/LAB/INF/062(R1)"
+            alt="MTR sticker: Not in use"
+            src="./img/nis.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,no,smoke,SSS/LAB/SAW/029(R1)"
+            alt="MTR no smoking sticker"
+            src="./img/no_smoking.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,public,SSS/LAB/SAW/121(R2)"
+            alt="MTR sticker: Non-public area, no unauthorized entry."
+            src="./img/non_authorized.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,escalator,handrail"
+            alt="Ex-MTR Escalator notice"
+            src="./img/old_mtr_esca_notice.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,psd,SSS/LAB/SAW/137.2(R2),012017"
+            alt="MTR sticker: Keep hands away from the sliding glass doors"
+            src="./img/PSD_Doors.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,psd,next door,SSS/LAB/INF/068.1"
+            alt="MTR sticker: Please use the next door"
+            src="./img/psd_next_door.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,helpline,csc,customer service centre,2175 2801"
+            alt="Please use the Help Line on the platform to contact staff or go to the Customer Service Centre in the concourse."
+            src="./img/ps_help.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,unwell,TSS/LAB/SAW/224(R1)"
+            alt="MTR sticker: Contact staff if you feel unwell"
+            src="./img/sick1.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,tml,suw,wks,signage,Wu Kai Sha,Sung Wong Toi,interchange"
+            alt="MTR signage at Sung Wong Toi Station: Listing interchange stations of the Tuen Ma Line towards Wu Kai Sha"
+            src="./img/suw_wks_sign.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,tml,up end,platform,SSS/LAB/SAW/212.10.1(R2)"
+            alt="MTR Platform Screen Doors sticker: TML Platform 1 up end"
+            src="./img/tml_up.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,icon,logo"
+            alt="MTR Train logo (With Background)"
+            src="./img/train1.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,icon,logo"
+            alt="MTR Train logo (No Background)"
+            src="./img/train2.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,wheelchair,icon,SSS/LAB/IDT/080"
+            alt="MTR Wheelchair sticker"
+            src="./img/wc.png"
+        >
+
+        <img class="sticker"
+            keyword="mtr,wheelchair,motorized,speed,SSS/LAB/SAW/200.2,072015"
+            alt="MTR sticker: Please operate any motorized wheelchair at a speed equivalent to walking pace"
+            src="./img/wc_spd.png"
+        >
+
+        <img class="sticker"
+            keyword="kcr,emergency stop"
+            alt="KCR signage: Emergency train stop (Arrow pointing towards bottom right)"
+            src="./img/kcr/kcr_emg_stop.png"
+        >
+
+        <img class="sticker"
+            keyword="kcr,energy saving,add value machine"
+            alt="KCR signage: For energy saving, please use other Add Value Machine"
+            src="./img/kcr/kcr_energy_saving.png"
+        >
+    </div>
+
+    <div id="res" class="imgs">
+    </div>
+
+    <div class="footer">
+        Contact: <a href="mailto:lx86@lx862.com">lx86@lx862.com</a>
+        <p>Accuracies of these works are not guarenteed</p>
+    </div>
+
+    <script>
+        const res = document.getElementById("res");
+        const src = document.getElementById("src");
+        const search = document.getElementById("search");
+        try {
+            search.addEventListener('input', callback);
+        } catch (e) {
+            fallback();
+        }
+        
+
+        function callback() {
+            try {
+                let term = search.value.toLowerCase();
+                res.textContent = '';
+                for (let img of src.children) {
+                    var keywords = img.getAttribute("keyword").split(",");
+                    for (let keyword of keywords) {
+                        if (keyword != null && (keyword.trim().length == 0 || keyword.toLowerCase().startsWith(term))) {
+                            res.append(img.cloneNode());
+                            break;
+                        }
+                    }
+                }
+            } catch (e) {
+                fallback();
+            }
+        }
+
+        function fallback() {
+            src.style.display = 'block';
+            res.style.display = 'none';
+            search.style.display = 'none';
+        }
+        callback();
+    </script>
+</body>
+
+</html>
