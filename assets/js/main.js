@@ -13,7 +13,7 @@ function callback() {
         let term = search.value.toLowerCase();
         res.textContent = '';
         for (let img of src.children) {
-            var keywords = img.getAttribute("keyword").split(",");
+            let keywords = img.getAttribute("keyword").split(",");
             for (let keyword of keywords) {
                 if (keyword != null && (keyword.trim().length == 0 || keyword.toLowerCase().startsWith(term))) {
                     res.append(img.cloneNode());
@@ -21,6 +21,7 @@ function callback() {
                 }
             }
         }
+        src.style.display = "none";
     } catch (e) {
         fallback();
     }

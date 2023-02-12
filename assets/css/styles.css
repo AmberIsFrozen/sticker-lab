@@ -1,20 +1,19 @@
 body {
     font-family: 'Segoe UI', 'Noto Sans', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #CCC;
-    color: #000;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.header,
-.footer {
+header,
+footer {
     text-align: center;
     margin: 20px;
 }
 
 .imgs {
     border: 1px solid #aaa;
-    width: 70%;
+    width: 100%;
     text-align: center;
-    margin: auto;
 }
 
 .sticker {
@@ -23,6 +22,6 @@ body {
     max-height: 200px;
 }
 
-#src {
-    display: none;
+#search {
+    margin: auto;
 }
