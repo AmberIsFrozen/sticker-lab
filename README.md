@@ -1,9 +1,9 @@
-# Sticker Lab
 <p align="center">
     <a href="https://lx862.com/sticker-lab/"><img src="assets/img/stl.png" alt="Sticker Lab Logo"></a>
 </p>
 
-Replication of public stickers/signage, usually related to railway signage in Hong Kong.
+<h1 align="center">Sticker Lab</h1>
+A collection of images replicating public stickers/signage, usually related to railway signage in Hong Kong.  
 Drawn when I have time :D
 
 ## License
