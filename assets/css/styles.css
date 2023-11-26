@@ -1,6 +1,6 @@
 body {
-    font-family: 'Segoe UI', 'Noto Sans', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 1200px;
+    font-family: sans-serif;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -17,9 +17,9 @@ footer {
 }
 
 .sticker {
-    padding: 10px;
-    max-width: 200px;
-    max-height: 200px;
+    padding: 1em;
+    max-width: 16em;
+    max-height: 16em;
 }
 
 #search {
